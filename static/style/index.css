@@ -1,0 +1,181 @@
+
+body {
+	background-color: #f1f1f1;
+	font-size: 28upx;
+	color: #333333;
+}
+
+uni-page-body,#app{
+		height:100%;
+	}
+/*红色渐变*/
+	body{
+		background: #F7F7F7;
+	}
+	.bg-g-red {
+		background-image: linear-gradient(45deg, #D61C41, #F67855);
+		color: #ffffff;
+	}
+	.maxWidth {
+		width: 100%;
+	}
+	
+	.maxHeight {
+		height: 100vh;
+	}
+	.pageView {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		flex-direction: column;
+		color: #FFFFFF;
+	}
+	.baseView{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: #FFFFFF;
+		/* align-items: center; */
+	}
+	.dflex{
+		display:flex;
+	}
+	.flex1{
+		flex:1;
+	}
+	.ma10{
+		margin:20rpx;
+	}
+	.mar10{
+		margin-right:20rpx
+	}
+	.mal10{
+		margin-left:10rpx
+	}	
+	.mal20{
+		margin-left:20rpx
+	}	
+	.Fl{float:left;}
+	.gTextCenter{text-align: center;}
+	.clear{clear: both;}
+	
+	/* 重置swiper样式 */
+	.user .uni-swiper-dot{
+		border: 1rpx solid #E5E5E5;
+	}
+	.user .uni-swiper-dot-active{
+		border: 1rpx solid #F6CB9F;
+	}
+	uni-swiper .uni-swiper-dot{
+		width:10rpx;
+		height: 10rpx;
+	}
+	.uni-checkbox-input-checked:before{
+		  content: "\e600";
+		  color:#BB8028;
+		
+	}
+	.app-btn{
+		display: block;
+		font-size: 24rpx;
+		width:160rpx;
+		height:54rpx;
+		line-height: 54rpx;
+		text-align: center;
+		border:1px solid #E5E5E5;
+		border-radius: 27rpx;
+		color:#999999;
+	}
+	
+	.shopCart .navBar{
+		box-shadow:none!important
+	}
+	.wx-icon{
+		width:48rpx;
+		height:48rpx;
+	}
+	.uni-input-placeholder{
+		font-size: 28rpx;
+		color: #ccc;
+	}
+	.tabNav{
+		width:100%;
+		background:#fff;
+		z-index: 1000;
+		position:fixed;
+		top:0px;
+		left:0px;
+	}
+	.tabNav .navBox{
+		height:44px;
+		width:662rpx;
+		text-align: center;
+		line-height:44px;
+		font-size:16px;
+		font-weight: bold;
+	}
+		
+	.tabNav .icon{
+		height:44px;
+		width:44px;
+		float: left;
+		line-height: 44px;
+		font-size:19px;
+		color:#121212;
+	}
+	
+	.tabNavOption{
+		width:100%;
+		z-index: 1000;
+		position:fixed;
+		top:0px;
+		left:0px;
+	}
+	.tabNavOption .navBox{
+		height:44px;
+		width:662rpx;
+		text-align: center;
+		line-height:44px;
+		font-size:16px;
+		font-weight: bold;
+	}
+		
+	.tabNavOption .icon{
+		height:44px;
+		width:44px;
+		float: left;
+		line-height: 44px;
+		font-size:19px;
+		color:#121212;
+	}
+	::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+		color: transparent;
+	  }
+	  
+	  
+	/*重置uni-numbox样式*/
+	.uni-numbox {
+		/* #ifndef APP-NVUE */
+		display: flex;
+		/* #endif */
+		flex-direction: row;
+		line-height: 50rpx!important;
+		height:50rpx!important;
+	}
+
+	.uni-numbox__value {
+		background-color: $uni-bg-color;
+		width: 60rpx!important;
+		height:50rpx!important;
+		text-align: center;
+		font-size: $uni-font-size-lg;
+		border: none!important;
+	}
+	.uni-numbox--disabled {
+		color: $uni-text-color-disable;
+	}
+	::-webkit-scrollbar {
+	  display: none; /* Chrome Safari */
+	}

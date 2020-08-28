@@ -1,0 +1,447 @@
+.home{
+	background-color: #FFFFFF;
+	.headBanner{
+		width:100%;
+		height:204rpx;
+		position: relative;
+		background-size: cover;
+		.userIconBox{
+			height:44px;
+			display: flex;
+			align-items: center;
+			padding-left:23rpx;
+			position: absolute;
+			z-index: 5;
+			.user{
+				width: 54rpx;
+				height:54rpx;
+			}
+		}
+	}
+	.headBanner::before{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		background-color: rgba(0, 0, 0, .6);
+		z-index: 0;
+	}
+	.content{
+		width:100%;
+		.shop{
+			padding:0 24rpx;
+			.shopCon{
+				width:100%;
+				margin: 0 auto;
+				margin-top:-80rpx;
+				background:rgba(255,255,255,1);
+				box-shadow:0rpx 0rpx 6rpx 0 rgba(0, 0, 0, 0.16);
+				border-radius:15rpx 15rpx 15rpx 15rpx;
+				position:relative;
+				.tag{
+					width:164rpx;
+					height:74rpx;
+					position:absolute;
+					top:12rpx;
+					right:80rpx;
+					background-image: url('https://qiniu.90shiguang.com/operation/2020-08-17/FlM5uoVQ8AkgVr1jJoLUyuzIL41r.png');
+					background-position:-183rpx -260rpx;
+					background-size:528rpx 336rpx;
+				}
+				.item{
+					display: flex;
+					justify-content: space-between;
+					padding:0 30rpx;
+					.shopLogo{
+						margin-right:10rpx;
+						line-height: 0;
+						box-shadow:0px 3px 7px 0px rgba(0, 0, 0, 0.08);
+						border-radius:5px;
+						padding:4rpx;
+						width:82rpx;
+						height:82rpx;
+						image{
+							width:82rpx;
+							height:82rpx;
+						}
+					}
+					.shopInfo{
+						.name{
+							width:520rpx;
+							overflow: hidden;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							font-size: 30rpx;
+							color:#3E3E3E;
+							font-weight: bold;
+						}
+						.starLevel{
+							margin-right: 10rpx;
+							image{
+								width:25rpx;
+								height:24rpx;
+								margin-right:10rpx;
+							}
+						}
+						.time{
+							font-size: 24rpx;
+							color:#666666;
+						}
+					}
+					.attention{
+						image{
+							width:38rpx;
+							height:38rpx;
+						}
+					}
+				}
+				.notice{
+					margin:16rpx 0 15rpx 0;
+					align-items: center;
+					font-size: 24rpx;
+					.txtCon{
+						height: 44rpx;
+						flex: 1;
+						display: flex;
+						align-items: center;
+						color:#999999;
+						.label{
+							display: inline-block;
+							width: 60rpx;
+							margin-top: -4px;
+						}
+						.txt{
+							display: inline-block;
+							width: 540rpx;
+							height: 40rpx;
+							overflow: hidden;
+
+						}
+					}
+				}
+			
+				.addAddress{
+					padding:20rpx 30rpx!important;
+					height:40rpx;
+					align-items: center;
+					background: #FAFAFA;
+					border-radius:0rpx 0rpx 15rpx 15rpx;
+					.wx-icon{
+						width: 30rpx;
+						height:30rpx;
+						margin-right: 10rpx;
+					}
+					.dflex{
+						align-items: center;
+					}
+					.address{
+						width:500rpx;
+						display: inline-block;
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						color:#666666;
+						font-size: 24rpx;
+					}
+					.phoneCon{
+						width:100rpx;
+						text-align: right;
+						border-left:1rpx solid #E5E5E5 ;
+					}
+				}
+			}
+		}
+		.tabCon{
+			.tab{
+				display: flex;
+				padding-top:24rpx;
+				.option{
+					flex:1;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					font-size: 29rpx;
+					color:#525252;
+					.active{
+						font-weight: bold;
+					}
+					.borbtn{
+						width:54rpx;
+						height:6rpx;
+						background: #B67728;
+						margin-top: 19rpx;
+					}
+				}
+			}
+		}
+		.menuCon{
+			border-top:1rpx solid #E5E5E5;
+			display: flex;
+			position: relative;
+			.topTile{
+				position: absolute;
+				top:0;
+				left:188rpx;
+				width:560rpx;
+				background: #ffffff;
+				height:80rpx;
+				line-height: 80rpx;
+				text-indent: 15px;
+				z-index: 2;
+				
+			}
+			.classify{
+				width:188rpx;
+				height:600rpx;
+				overflow-y: auto;
+				background: #F7F7F7;
+				.classifyCon{
+					background: #F7F7F7;
+					height: 100rpx;
+					display: flex;
+					align-items: center;
+					.classify_text{
+						border-left: 10rpx solid #F7F7F7;
+						text-align: left;
+						font-size: 26rpx;
+						padding:10rpx 34rpx;
+						color:#666666;
+					}
+				}
+				.active{
+					background: #ffffff;
+					.classify_text{
+						border-left: 10rpx solid #000000;
+						color:#333333;
+					}
+				}
+			}
+			.cookbook{
+				height:600rpx;
+				overflow-y: auto;
+				padding: 0 20rpx;
+				flex:1;
+				.title{
+					font-size: 26rpx;
+					color:#333333;
+					padding-bottom:32rpx ;
+					// height:90rpx;
+					// line-height: 90rpx;
+					// text-indent: 10rpx;
+				}
+				.commodityCon{
+					display: flex;
+					padding-bottom: 44rpx;
+					.commodity_img{
+						width:140rpx;
+						height:140rpx;
+						border-radius:5rpx;
+						margin-right: 29rpx;
+					}
+					.commodity_info{
+						// width:328rpx;
+						flex:1;
+						.name{
+							width:328rpx;
+							font-size: 30rpx;
+							overflow: hidden;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+						}
+						.sales{
+							font-size: 24rpx;
+							color:#999999;
+							margin-top: 16rpx;
+						}
+						.dflex{
+							display: flex;
+							justify-content: space-between;
+							align-items: flex-end;
+							.priceCon{
+								flex:1;
+								color: #B7781B;
+								font-size: 20rpx;
+							}
+							.price{
+								font-size: 32rpx;
+							}
+							.numCon{
+							}
+						}
+					}
+				}
+			
+			}
+		}
+
+	}
+	.shopCarCon{
+		position: fixed;
+		top:0;
+		width: 100%;
+		z-index: 99;
+		.pop{
+			position: absolute;
+			top:0;
+			background: #000;
+			width: 100%;
+			height:100%;
+			opacity: 0.8;
+			z-index: 99;
+		}
+		.content{
+			position: absolute;
+			bottom:0;
+			background: #fff;
+			opacity:1!important;
+			z-index: 100;
+			border-radius: 30rpx 30rpx 0rpx 0rpx;
+			.shopCar{
+				padding:38rpx 27rpx 0 27rpx;
+				.head{
+					display: flex;
+					justify-content: space-between;
+					padding-bottom: 36rpx;
+					font-weight: bold;
+					border-bottom: solid 1rpx #E5E5E5;
+					.empty{
+						color:#555555;
+						font-weight: 100;
+						display: flex;
+						align-items: center;
+						.wx-icon{
+							width:30rpx;
+							height:30rpx;
+							margin-right: 4rpx;
+						}
+					}
+				}
+				.shopCarList{
+					padding-top: 24rpx;
+					padding-bottom:20rpx;
+					.commodityCon{
+						display: flex;
+						padding-bottom: 40rpx;
+						.commodity_img{
+							width:140rpx;
+							height:140rpx;
+							border-radius:5rpx;
+							margin-right: 29rpx;
+						}
+						.commodity_info{
+							flex:1;
+							position: relative;
+							.name{
+								width: 500rpx;
+								font-size: 30rpx;
+								overflow: hidden;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+							}
+							.dflex{
+								display: flex;
+								width:100%;
+								justify-content: space-between;
+								align-items: flex-end;
+								position: absolute;
+								bottom:0;
+								.priceCon{
+									color: #B7781B;
+									font-size: 20rpx;
+								}
+								.price{
+									font-size: 32rpx;
+									font-weight: bold;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.paddingBottom{
+		padding-bottom:32px;
+	}
+	.settlement{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: fixed;
+		z-index: 999;
+		background: #ffffff;
+		width:100%;
+		bottom:0;
+		border-top:1rpx solid #E5E5E5;
+		.totalPrice{
+			flex:1;
+			display: flex;
+			align-items: center;
+			position: relative;
+			height: 106rpx;
+			padding:0 20rpx;
+			.imgCon{
+				position: absolute;
+				// line-height: 0;
+				bottom:20rpx;
+				z-index: 999;
+				.shopCar{
+					width: 106rpx;
+					height:106rpx;
+				}
+				.note{
+					position: absolute;
+					top:4rpx;
+					left:70rpx;
+					min-width: 16rpx;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height:32rpx;
+					line-height: 32rpx;
+					background: #B67728;
+					color:#ffffff;
+					padding:0 9rpx;
+					font-size: 26rpx;
+					border-radius:32rpx;
+
+				}
+			}
+			.priceCon{
+				color: #B7781B;
+				font-size: 22rpx;
+				margin-left: 128rpx;
+				.price{
+					font-size: 36rpx;
+				}
+				.tips{
+					color:#999999;
+				}
+			}
+		}
+		.set{
+			height: 106rpx;
+			width:298rpx;
+			line-height: 106rpx;
+			text-align: center;
+			background: #000000;
+			color:#F5CBA2;
+			font-size: 32rpx;
+			font-weight: bold;
+		}
+		.time{
+			height: 106rpx;
+			width:298rpx;
+			line-height: 106rpx;
+			text-align: center;
+			background: #959595;
+			color:#ffffff;
+			font-size: 32rpx;
+			font-weight: bold;
+		}
+	}
+}
